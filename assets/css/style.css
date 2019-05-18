@@ -33,19 +33,22 @@ h1 {
 }
 #GrayBox {
     clear: both;
-    height: 800px;
+    height: 100%;
     margin: auto;
     background-image: url(../images/crossline-lines.png);
     padding: 10px;
 }
 
 .WhiteBox {
-    width: 550px;  
+    width: 320px;  
     background: white;
     margin: auto;   
     overflow: hidden;
 }
-
+textarea {
+    width: 95%;
+    /* margin: 5px; */
+}
 
 
 .heading2 {
@@ -109,7 +112,7 @@ button {
 
 .foot {
     clear: both;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
 }
@@ -117,6 +120,12 @@ button {
     margin: auto;
     width: 20%;
 }
+
+@media screen and (min-width: 640px) {
+    .WhiteBox {
+        width: 100%
+    }
+
 
 @media screen and (min-width: 768px) {
     .WhiteBox {
@@ -156,6 +165,9 @@ button {
     }
     #HeaderLinks {
         float: right;
+    }
+    .foot {
+        position: fixed;
     }
 }
 
